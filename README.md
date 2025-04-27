@@ -20,6 +20,7 @@ o	Vendor showcase and special promotions
 o	Inquiry forms and direct messaging
 o	Mobile-friendly, fully responsive design
 
+![image](https://github.com/user-attachments/assets/68708012-e39c-45c0-b7ad-488b6cd1cece)
 
 ####	Admin Panel:
 o	Manage event bookings, customer inquiries, and vendor information
