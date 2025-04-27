@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,600;1,700&display=swap');
+
+:root{
+    --gold:#B68D40;
+    --black:#24262b;
+}
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:3rem 4%;
+}
+
+.hero{
+    width: 100%;
+    height: 35vh;
+    background: var(--gold);
+    position:relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero h1{
+    font-size: 60px;
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .about {
+    margin: 20px; /* Add some margin for better spacing */
+}
+
+/* Style the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Add some margin above the table */
+}
+
+/* Style the table header */
+.table-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Style alternating rows for better readability */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add some padding to cells for better spacing */
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+/* Style the table hover effect */
+.table tbody tr:hover {
+    background-color: #cce5ff;
+}
+ 
+
+ .link-button-nav {
+   display: inline-block;
+   padding-top: 15px;
+   background-color: #91D956; 
+   color: #fff; 
+   border: none;
+   border-radius: 20px; 
+   font-size: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s ease; 
+   width: 200px; 
+   height: 60px;
+   text-align: center;
+   text-decoration: none;
+}
+
+
+.link-button-nav:hover {
+   background-color: crimson; 
+}
+
+
+
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    padding-bottom: 60px;
+ }
+ 
+ .container .content{
+    text-align: center;
+ }
+ 
+ .container .content h3{
+    font-size: 30px;
+    color:#333;
+    
+ }
+ 
+ .container .content h3 span{
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    padding:0 15px;
+    
+ }
+ 
+ .container .content h1{
+    font-size: 50px;
+    color:#333;
+ }
+ 
+ .container .content h1 span{
+    color:crimson;
+ }
+ 
+ .container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ 
+ .container .content .btn{
+    display: inline-block;
+    padding:10px 30px;
+    font-size: 20px;
+    background: #333;
+    color:#fff;
+    margin:0 5px;
+    text-transform: capitalize;
+ }
+ 
+ .container .content .btn:hover{
+    background: crimson;
+ }
+ 
+ .form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:100px;
+    height: 500px;
+    padding-bottom: 60px;
+    background: #eee;
+ }
+ 
+ .form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    width: 500px;
+ }
+ 
+ .form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:#333;
+ }
+ 
+ .form-container form input,
+ .form-container form select{
+    width: 100%;
+    padding:10px 15px;
+    font-size: 17px;
+    margin:8px 0;
+    background: #eee;
+    border-radius: 5px;
+ }
+ 
+ .form-container form select option{
+    background: #fff;
+ }
+ 
+ .form-container form .form-btn{
+    background: #fbd0d9;
+    color:crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container form .form-btn:hover{
+    background: crimson;
+    color:#fff;
+ }
+ 
+ .form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color:#333;
+ }
+ 
+ .form-container form p a{
+    color:crimson;
+ }
+ 
+ .form-container form .error-msg{
+    margin:10px 0;
+    display: block;
+    background: crimson;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding:10px;
+ }
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+}
+
+nav .logo{
+    width: 80px;
+
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.content h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+
+
+
+
+ .service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.service .title h4{
+   font-size: 30px;
+    text-align: center;
+}
+
+
+.service .box-container .box{
+flex: 1 1 30rem;
+margin: 1rem;
+background: #fff;
+overflow: hidden;
+padding: 1.5rem ;
+box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 9);
+}
+
+
+.service .box-container .box img{
+    height: 35rem;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+
+.service1 .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+
+.service1 .title h4{
+   font-size: 30px;
+    text-align: center;
+}
+
+
+.service1 .box-container .box{
+flex: 1 1 30rem;
+margin: 1rem;
+background: #fff;
+overflow: hidden;
+padding: 1.5rem ;
+box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 9);
+}
+
+
+.service1 .box-container .box img{
+    height: 35rem;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+.service2 .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.service2 .title h4{
+   font-size: 30px;
+    text-align: center;
+}
+
+
+.service2 .box-container .box{
+flex: 1 1 30rem;
+margin: 1rem;
+background: #fff;
+overflow: hidden;
+padding: 1.5rem ;
+box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 9);
+}
+
+
+.service2 .box-container .box img{
+    height: 35rem;
+width: 100%;
+object-fit: cover;
+}
+
+
+.service3 .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.service3 .title h4{
+   font-size: 30px;
+    text-align: center;
+}
+
+
+.service3 .box-container .box{
+flex: 1 1 30rem;
+margin: 1rem;
+background: #fff;
+overflow: hidden;
+padding: 1.5rem ;
+box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 9);
+}
+
+
+.service3 .box-container .box img{
+    height: 35rem;
+width: 100%;
+object-fit: cover;
+}
+
+.service4 .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.service4 .title h4{
+   font-size: 30px;
+    text-align: center;
+}
+
+
+.service4 .box-container .box{
+flex: 1 1 30rem;
+margin: 1rem;
+background: #fff;
+overflow: hidden;
+padding: 1.5rem ;
+box-shadow: 0 .3rem .4rem rgba(0, 0, 0, 9);
+}
+
+
+.service4 .box-container .box img{
+    height: 35rem;
+width: 100%;
+object-fit: cover;
+}
+
+
+
+.our-story {
+    margin: 20px;
+}
+
+/* Style the form box */
+.box {
+    background-color: var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form heading */
+.box h3 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style the form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Style the form labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the submit and reset buttons */
+.submit-button {
+    background-color: var(--black);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover,
+.submit-button:active {
+    background-color: var(--black);
+}
+
+
+.contact1 {
+    background-color: #B68D40;
+   height: 20vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact1 h3{
+    font-size: 25px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 300;
+    position: relative;
+    padding: 20px;
+}
+
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+
+}
+
+
+.footer-col h4{
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+
+
+
+
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

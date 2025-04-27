@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="assests/homeback.mp4" type="video/mp4">
+        </video>
+
+
+    <nav> <img src="assests/logo.png" class="logo">
+    
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="services.html">Service</a></li>
+        <li> <a href="Packages.html">Packages</a></li>
+        <li> <a href="vendors.html">Vendors</a></li>
+        <li> <a href="aboutus.html">About Us</a></li>
+        <li> <a href="reviews.html">Testimonials</a></li>
+        <li> <a href="newc.php">Contact</a></li>
+        <a href="#" class="btnn" onclick="toggleForm()">Login</a>
+
+        <div class="login-popup" id="loginPopup">
+            
+            <div class="login-content">
+              <span class="close" onclick="toggleForm()">&times;</span>
+              
+              <h2>Login</h2>
+              <form action="Login.php" method="GET">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <div id="errorLabel" class="error-message" style="display: none;">Login Failed!</div>
+    
+                <button type="submit">Login</button>
+              
+            </form>
+        
+       
+                       
+            </div>
+          </div>
+        
+          <script>
+              function toggleForm() {
+                  var loginPopup = document.getElementById("loginPopup");
+                  loginPopup.style.display = (loginPopup.style.display === "block") ? "none" : "block";
+                }
+                
+                function toggleSignUp() {
+                  var signupContent = document.querySelector(".signup-content");
+                  signupContent.style.display = (signupContent.style.display === "block") ? "none" : "block";
+                }
+          </script>
+
+
+    </ul>
+    </nav>
+    
+
+    <div class="content">
+        <img src="assests/logo.png" class="logo">
+        <h1>Event Management Agency</h1>
+        <h2>we make every moment special!</h2>
+     
+    
+    </div>
+    </div>
+
+    
+    <div class="header">
+        <h1>LOOKING FOR THE BEST EVENT PLANNERS IN SRI LANKA?</h1>
+        <h2>We Are Here To Help You</h2>
+      </div>
+  
+    <section class="step-container">
+
+       
+
+        <div class="step">
+            <img src="assests/team/8.png" class="proflie-img">
+            <h3>Industry Professional</h3>
+            <p>Plan your Event with industry professionals, with more than 12 years of experience.</p>
+        
+        </div>
+    
+        <div class="step">
+            <img src="assests/team/9.png" class="proflie-img">
+            <h3>Friendly Service</h3>
+            <p>We will take away any stress and helping you to have a wonderful event planning experience.</p>
+            
+        </div>
+    
+        <div class="step">
+            <img src="assests/team/11.png" class="proflie-img">
+            <h3>Discounts</h3>
+            <p>Exclusive discounts from selected service providers & suppliers.</p> 
+        </div>
+    
+      
+    </section>
+    
+    <div class="weare">
+    <a href="aboutus.html" class="btn">Here we are</a>
+</div>
+   
+    
+<div class="containernew">
+    <img class="image" src="assests/homeback1.jpg" alt="Image Description">
+    <div class="text-overlay">
+        <h1>We Make It Happen</h1>
+        <p>You tell us what you want to spend and we will make sure you stick to this; we will work with you to get you the best value for money on every last detail.</p>
+    </div>
+</div>
+
+
+<div class="contentservice">
+    <hr />
+    <h1>Our Services</h1>
+   
+   </div>
+
+<section class="service4" id="service">
+    
+    <div class="box-container">
+
+        <div class="box">
+            <img src="assests/service/1.jpg" alt="">
+                <div class="info">
+                <h3>Ashtaka</h3>
+                <a href="Ashtaka.html" class="btn">MORE INFO</a>
+            </div>
+        </div>
+   
+        <div class="box">
+            <img src="assests/service/2.jpg" alt="">
+                <div class="info">
+                <h3>Astrology</h3>
+                <a href="#" class="btn">MORE INFO</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assests/service/3.jpeg" alt="">
+                <div class="info">
+                <h3>Bands/DJ</h3>
+                <a href="#" class="btn">MORE INFO</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="assests/service/4.jpeg" alt="">
+                <div class="info">
+                <h3>Cake Structures</h3>
+                <a href="#" class="btn">MORE INFO</a>
+            </div>
+        </div>
+            
+
+</section>
+
+
+
+<section class="service" id="service">
+    <div class="section__container">
+        <div class="header">
+            <hr />
+          <h1>What our clients say about us</h1>
+     
+        </div>
+        <div class="testimonials__grid">
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                Dear Elite Events, Thank you for handling the day planning of our wedding so well. 
+            </p>
+            <hr />
+            <img src="assests/pp/1.jpg" alt="user" />
+            <p class="name">Methma & Shehan</p>
+          </div>
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                A well-organized and informative event that I would highly recommend.
+            </p>
+            <hr />
+            <img src="assests/pp/1.jpg" alt="user" />
+            <p class="name">Roshanthi & Ruwanga</p>
+          </div>
+          <div class="card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+                The organizers really know how to throw a party. 5/5 star
+            </p>
+            <hr />
+            <img src="assests/pp/1.jpg" alt="user" />
+            <p class="name">Himansa & Shehan</p>
+          </div>
+
+         
+        </div>
+        
+      </div>
+  
+</section>
+      
+
+
+
+
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+            <h4>LINKS</h4>
+            <ul>
+                <li> <a href="services.html">Service</a></li>
+        <li> <a href="Packages.html">Packages</a></li>
+        <li> <a href="vendors.html">Vendors</a></li>
+        <li> <a href="aboutus.html">About Us</a></li>
+        <li> <a href="reviews.html">Testimonials</a></li>
+        <li> <a href="newc.php">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col1">
+        <h4>Contact Details</h4>
+        <ul>
+            <li><a href="#">Address</a></li>
+            <p>Elite Events, Kandy, Sri Lanka</p>
+            <li><a href="#">Contact Number</a></li>
+            <p>081 - 237 60 87</p>
+            <li><a href="#">Email</a></li>
+            <p>Eventelite@mail.lk</p>
+ 
+        </ul>
+    </div>
+
+   
+        
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <img src="assests/logo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+<h1>ALL COPYRIGHTS RESERVED BY ELITE EVENTS - © 2024</h1>
+<h2>WEBSITE DESIGNED & DEVELOPED BY FIVE BUGS</h2>
+   </footer>
+
+
+
+</body>
+</html>
